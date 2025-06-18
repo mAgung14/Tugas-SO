@@ -102,59 +102,11 @@
             <div class="card">
               <div class="card-body">
                 <h4 class="text-center p-2">TUGAS SISTEM OPERASI</h4>
-                <h5>1. PTPD (Prioritize the Peripheral then the Deep)</h5>
-                <p><b>Hitungan : </b><br>
-                  |1234-1600| + |1600-1050| + |1050-1775| + |1775-1950| + |1950-140| + |140-825| +
-                  |825-75| + |75-1300| + |1300-1450| + |1450-600| + |600-500| + |500-1600| + 
-                  |1600-1050| + |1050-30| + |30-1900| + |1900-2000| + |2000-700| + |700-1300| + 
-                  |1300-55| + |55-425| + |425-84| + |84-700| + |700-1600| + |1600-200|<br>
-                  <b>Jarak : </b><br>
-                  366 + 550 + 725 + 175 + 1810 + 685 + 750 + 1225 + 150 + 850 + 100 + 1100 + 550 +
-                  1020 + 1870 + 100 + 1300 + 600 + 1245 + 370 + 341 + 616 + 900 + 1400 = <b>20333 track</b>
-
-
-                  </p>
-                  <p><h5>2. SSTF (Shortest Seek Time First)</h5></p>
-                  Dari 1234, pilih yang jaraknya paling dekat (misal 1300 lebih dekat dibanding 1600)<br>
-                  SSTF selalu memilih track yang paling dekat dari posisi head saat ini. Head mencari permintaan yang memiliki jarak minimum dari posisinya, lalu berpindah ke sana.<br>
-                  <p>Head bergerak ke track terdekat dulu.<br>
-                  <b>Hasil Jarak : 6860 track</b>
-                  <br>
-                    66 + 0 + 150 + 150 + 0 + 175 + 125 + 50 + 50 + 950 + 0 + 225 + 125 + 0 + 
-                    100 + 100 + 75 + 225 + 60 + 56 + 9 + 20 + 25 = <b>2636 track</b>
-                    </p>
-                    <p>
-                      <h5>3. SCAN </h5>
-                      Head bergerak ke kanan (naik) sampai akhir (track 2000), lalu balik.<br>Jarak sama dengan SSTF di kasus ini.<br>
-                      Total lintasan SCAN = <b>2636 track</b>
-                    </p>
-                    <p>
-                      <h5>4. LOOK</h5>
-                      Seperti SCAN, tapi berhenti di track tertinggi permintaan (2000) tanpa ke ujung disk kalau tidak perlu.<br>
-                      Jarak sama dengan SCAN.<br>
-                      Total lintasan LOOK = <b>2636 track</b>
-                    </p>
-                    <p>
-                      <h5>5. C-SCAN (Circular SCAN)</h5>
-                      Head jalan naik terus sampai 2000, lalu lompat ke 0, lanjut.<br>
-                      jarak : <br>
-                      66 + 150 + 150 + 0 + 175 + 125 + 50 + 50 + 2000 + 30 + 25 + 20 + 9 + 56 +
-                      60 + 225 + 75 + 100 + 100 + 0 + 125 + 225 + 0 = <b>3611 track</b>
-                    </p>
-                    <P>
-                      <h5>6. C-LOOK</h5>
-                      Seperti C-SCAN, tapi lompat ke track terkecil permintaan, bukan ke 0.<br>
-                      Jarak sama dengan C-SCAN.<br>
-                      Total lintasan C-LOOK = <b>3611 track</b>
-                    </P>
-                    <p>
-                      <h5>7. FCFS (First Come First Serve)</h5>
-                      1234 → 1600 → 1050 → 1775 → 1950 → 140 → 825 → 75 → 1300 → 1450 → 600 → 500 → 1600 → 1050 → 30 → 1900 → 2005 → 700 → 1300 → 55 → 425 → 84 → 700 → 1600 → 200.<br>
-                      Sesuai urutan request yang diberikan..<br>
-                      Total lintasan Optimized LOOK = <b>19,062 track</b>
-                    </p>
-                  
-                    <img src="img/pergerakan_head_disk_scheduling.png" class="card-img-top" alt="Deskripsi Gambar">
+                    <img src="img/2 (1).png" class="card-img-top" alt="Deskripsi Gambar">
+                    <img src="img/2 (2).png" class="card-img-top" alt="Deskripsi Gambar">
+                    <img src="img/2 (3).png" class="card-img-top" alt="Deskripsi Gambar">
+                    <img src="img/2 (4).png" class="card-img-top" alt="Deskripsi Gambar">
+                    <img src="img/Screenshot (187).png" class="card-img-top" alt="Deskripsi Gambar">
                     
               </div>
             </div>
